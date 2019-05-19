@@ -2,6 +2,11 @@
 <h2>Subject: BrowserHelper</h2>
 <p>Based on and Credits to: <span>james2doyle/getBrowser.php</span>  </p>
 
+<h3>Updates</h3>
+<table>
+   <tr><td>Date</td><td>Added/Edited</td><td>Description</td></tr>
+</table>
+
 <h3>Summery:</h3>
 <ul>
    <li>Language:<span>PHP</span></li>
