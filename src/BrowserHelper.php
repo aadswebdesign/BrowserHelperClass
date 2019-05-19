@@ -100,13 +100,17 @@ class BrowserHelper
         $this->_version = "";
 
         // First get the platforms?
-        if (preg_match('/linux/i', $this->_user_agent)) {
+        if (preg_match('/linux/i', $this->_user_agent)):
             $this->_platform = 'Linux';
-        } elseif (preg_match('/macintosh|mac os x/i', $this->_user_agent)) {
+        elseif (preg_match('/iPad|CPU os x/i', $this->_user_agent)):
+            $this->_platform = 'iPad';
+        elseif (preg_match('/iPhone|CPU os x/i', $this->_user_agent)):
+            $this->_platform = 'iPhone';
+        elseif (preg_match('/macintosh|mac os x/i', $this->_user_agent)):
             $this->_platform = 'Mac';
-        } elseif (preg_match('/windows|win32/i', $this->_user_agent)) {
+        elseif (preg_match('/windows|win32/i', $this->_user_agent)):
             $this->_platform = 'Windows';
-        }
+        endif;
 
         // Next get the name of the useragent yes seperately and for good reason
         if(preg_match('/MSIE/i',$this->_user_agent) && !preg_match('/Opera/i',$this->_user_agent)):
@@ -118,6 +122,9 @@ class BrowserHelper
         elseif(preg_match('/Chrome/i',$this->_user_agent)):
             $this->_browser_name = 'Google Chrome';
             $this->_user_browser = "Chrome";
+        elseif(preg_match('/criOS/i',$this->_user_agent)):
+            $this->_browser_name = 'Google CriOS (Chrome on Safari)';
+            $this->_user_browser = "CriOS";
         elseif(preg_match('/Safari/i',$this->_user_agent)):
             $this->_browser_name = 'Apple Safari';
             $this->_user_browser = "Safari";
@@ -177,12 +184,12 @@ class BrowserHelper
             if(isset($this->_message)):
                 $this->_html .= self::LI_START .'style="color: #000; top:auto; right:1.0em; bottom: 3.0em; left: 11.5em; font-size: 0.8em"  class="fixed"' . self::EL_END . 'Message: <span>'. $this->_message . '</span>' . self::LI_CLOSE;
             else:
-                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'UserAgent:' . self::SPAN_START . $this->_get_browser()['userAgent'] . self::SPAN_CLOSE . self::LI_CLOSE;
-                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'Platform:' . self::SPAN_START . $this->_get_browser()['platform'] . self::SPAN_CLOSE . self::LI_CLOSE;
-                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'Browser\'s Name:' . self::SPAN_START . $this->_get_browser()['browser_name'] . self::SPAN_CLOSE . self::LI_CLOSE;
-                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'User\'s Browser:' . self::SPAN_START . $this->_get_browser()['user_browser'] . self::SPAN_CLOSE . self::LI_CLOSE;
-                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'Version:' . self::SPAN_START . $this->_get_browser()['version'] . self::SPAN_CLOSE . self::LI_CLOSE;
-                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'Pattern:' . self::SPAN_START . $this->_get_browser()['pattern'] . self::SPAN_CLOSE . self::LI_CLOSE;
+                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'UserAgent: ' . self::SPAN_START . $this->_get_browser()['userAgent'] . self::SPAN_CLOSE . self::LI_CLOSE;
+                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'Platform: ' . self::SPAN_START . $this->_get_browser()['platform'] . self::SPAN_CLOSE . self::LI_CLOSE;
+                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'Browser\'s Name: ' . self::SPAN_START . $this->_get_browser()['browser_name'] . self::SPAN_CLOSE . self::LI_CLOSE;
+                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'User\'s Browser: ' . self::SPAN_START . $this->_get_browser()['user_browser'] . self::SPAN_CLOSE . self::LI_CLOSE;
+                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'Version: ' . self::SPAN_START . $this->_get_browser()['version'] . self::SPAN_CLOSE . self::LI_CLOSE;
+                $this->_html .= self::LI_START .'class="browser-detail-li"' . self::EL_END . 'Pattern: ' . self::SPAN_START . $this->_get_browser()['pattern'] . self::SPAN_CLOSE . self::LI_CLOSE;
             endif;
             $this->_html .= self::UL_CLOSE;
             if(isset($this->_wrapper)):
