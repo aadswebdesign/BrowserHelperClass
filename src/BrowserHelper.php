@@ -100,7 +100,10 @@ class BrowserHelper
         $this->_version = "";
 
         // First get the platforms?
-        if (preg_match('/linux/i', $this->_user_agent)):
+        // First get the platforms?
+        if (preg_match('/linux|android/i', $this->_user_agent)):
+            $this->_platform = 'Android';
+        elseif (preg_match('/linux/i', $this->_user_agent)):
             $this->_platform = 'Linux';
         elseif (preg_match('/iPad|CPU os x/i', $this->_user_agent)):
             $this->_platform = 'iPad';
