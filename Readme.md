@@ -2,7 +2,7 @@
 ##Subject: BrowserHelper
 <p>Based on and Credits to: <span>james2doyle/getBrowser.php</span>  </p>
 
-###Summery:
+<h3>Summery:</h3>
 <ul>
    <li>Language:<span>PHP</span></li>
    <li>Version:<span>5+</span></li>
@@ -35,7 +35,7 @@
    </li>
 </ul> 
 
-###Howto:
+<h3>Howto:</h3>
 
 `<?php`
 ```
@@ -125,12 +125,12 @@ public function print_useragent(){
 }
 ```
 
-##### About me.
+<h4 style="margin-bottom:-15px">About me.</h4>
 <p>I'm not a php expert and just have a basic knowledge about it. I usually get there by looking up examples, making mistakes, learning and above all with persistence. Therefor constructive critics are alway welcome.
  </p>
  
-##### My website: https://www.aadswebdesign.nl
-##### In progress.
+<h5 style="margin-top:-10px;margin-bottom:-15px">My website: https://www.aadswebdesign.nl</h5> 
+<h5 style="margin-bottom:-15px">In progress.</h5>
 <p>
 This site is in progress and there is still a lot to be done. Because I have limited time for that, the progrees is at a slow pace. At the first page I have an html print of browserinfo. 
 <?p>
