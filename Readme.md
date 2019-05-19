@@ -7,6 +7,7 @@
    <thead><td>No</td><td>Date</td><td>Description</td></thead>
    <tr><td>001</td><td>19-05-2019</td><td>added platforms "iPad" and "iPhone(just I'm unable to test on iPhone but I guess it's right?)" </td></tr>
    <tr><td>002</td><td>19-05-2019</td><td>added user browser "CriOS (Chrome on Ipad)" </td></tr>
+   <tr><td>003</td><td>19-05-2019</td><td>Separated Android from Linux platform and gave it it's own platform.</td></tr>
 </table>
 
 <h3>Summery:</h3>
