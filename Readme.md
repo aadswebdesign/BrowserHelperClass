@@ -1,5 +1,5 @@
 
-##Subject: BrowserHelper
+<h2>Subject: BrowserHelper</h2>
 <p>Based on and Credits to: <span>james2doyle/getBrowser.php</span>  </p>
 
 <h3>Summery:</h3>
