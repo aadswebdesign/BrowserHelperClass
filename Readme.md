@@ -4,7 +4,9 @@
 
 <h3>Updates</h3>
 <table>
-   <tr><td>Date</td><td>Added/Edited</td><td>Description</td></tr>
+   <thead><td>No</td><td>Date</td><td>Description</td></thead>
+   <tr><td>001</td><td>19-05-2019</td><td>added platforms "iPad" and "iPhone(just I'm unable to test on iPhone but I guess it's right?)" </td></tr>
+   <tr><td>002</td><td>19-05-2019</td><td>added user browser "CriOS (Chrome on Ipad)" </td></tr>
 </table>
 
 <h3>Summery:</h3>
