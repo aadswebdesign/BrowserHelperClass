@@ -134,13 +134,13 @@ public function print_useragent(){
 ```
 
 <h4 style="margin-bottom:-15px">About me.</h4>
-<p>I'm not a php expert and just have a basic knowledge about it. I usually get there by looking up examples, making mistakes, learning and above all with persistence. Therefor constructive critics are alway welcome.
+<p>I'm not a php expert and just have a basic knowledge about it. I usually get there by looking up examples, making mistakes, learning and above all with persistence. Therefor constructive critic is always welcome.
  </p>
  
 <h5 style="margin-top:-10px;margin-bottom:-15px">My website: https://www.aadswebdesign.nl</h5> 
 <h5 style="margin-bottom:-15px">In progress.</h5>
 <p>
-This site is in progress and there is still a lot to be done. Because I have limited time for that, the progrees is at a slow pace. At the first page I have an html print of browserinfo. 
+This site is in progress and there is still a lot to be done. Because I have limited time for that, the progress is at a slow pace. At the first page I have an html print of browserinfo. 
 <?p>
  
  
